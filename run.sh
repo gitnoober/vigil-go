@@ -10,4 +10,4 @@ go build -o vigil-go cmd/web/*.go && ./vigil-go \
 -pusherSecret='123abc' \
 -pusherApp="1" \
 -pusherPort="4001" \
--pusherSecure=false 
+-pusherSecure=false
