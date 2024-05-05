@@ -1,9 +1,7 @@
 
 # Vigilante
 
-This is the source code for the second project in the Udemy course Working with Websockets in Go (Golang).
-
-A dead simple monitoring service, intended to replace things like Nagios.
+A simple monitoring service, intended to replace things like Nagios.
 
 ## Build
 
@@ -22,7 +20,7 @@ env GOOS=linux GOARCH=amd64 go build -o vigil-go cmd/web/*.go
 ## Requirements
 
 Vigilante requires:
-- Postgres 11 or later (db is set up as a repository, so other databases are possible)
+- Postgres 16 or later (db is set up as a repository, so other databases are possible)
 - An account with [Pusher](https://pusher.com/), or a Pusher alternative
 (like [ipê](https://github.com/dimiro1/ipe))
 
@@ -40,7 +38,7 @@ Run with flags:
 
 ~~~
 ./vigil-go \
--dbuser='tcs' \
+-dbuser='postgres' \
 -pusherHost='localhost' \
 -pusherPort='4001' \
 -pusherKey='123abc' \
