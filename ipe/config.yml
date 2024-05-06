@@ -10,7 +10,7 @@ apps:
   - name: "App"
     enabled: true
     only_ssl: false
-    key: "123abc"
+    key: "abc123"
     secret: "abc123"
     app_id: "1"
     user_events: true

@@ -7,7 +7,7 @@ go build -o vigil-go cmd/web/*.go && ./vigil-go \
 -dbuser='postgres' \
 -pusherHost='localhost' \
 -pusherKey='abc123' \
--pusherSecret='123abc' \
+-pusherSecret='abc123' \
 -pusherApp="1" \
 -pusherPort="4001" \
 -pusherSecure=false

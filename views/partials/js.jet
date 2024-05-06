@@ -1,6 +1,5 @@
 <script src="/static/admin/js/pusher.min.js"></script>
 <script>
-    console.log("Setting up pusher")
     let pusher = new Pusher("{{.PreferenceMap["pusher-key"]}}", {
         authEndpoint: "/pusher/auth",
         wsHost: "localhost",
@@ -11,6 +10,10 @@
     });
 
     let public = pusher.subscribe("public-channel");
+
+    public.bind("test-event", function (data) {
+        successAlert(data.message);
+    });
 
 
     let attention = Prompt();
