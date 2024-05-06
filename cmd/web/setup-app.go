@@ -122,6 +122,7 @@ func setupApp() (*string, error) {
 	preferenceMap["pusher-key"] = *pusherKey
 	preferenceMap["identifier"] = *identifier
 	preferenceMap["version"] = vigilateVersion
+	fmt.Println("preferenceMap", preferenceMap)
 
 	app.PreferenceMap = preferenceMap
 

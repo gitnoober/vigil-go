@@ -1,4 +1,18 @@
+<script src="/static/admin/js/pusher.min.js"></script>
 <script>
+    console.log("Setting up pusher")
+    let pusher = new Pusher("{{.PreferenceMap["pusher-key"]}}", {
+        authEndpoint: "/pusher/auth",
+        wsHost: "localhost",
+        wsPort: 4001,
+        forceTLS: false,
+        enabledTransports: ["ws", "wss"],
+        disabkedTransports: []
+    });
+
+    let public = pusher.subscribe("public-channel");
+
+
     let attention = Prompt();
 
     {{if .Flash != ""}}
