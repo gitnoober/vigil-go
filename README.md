@@ -29,6 +29,8 @@ Vigilante requires:
 First, make sure ipê is running (if you're using ipê):
 
 On Mac/Linux
+
+### TODO: Update Markdown config
 ~~~
 cd ipe
 ./ipe
